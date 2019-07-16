@@ -107,7 +107,7 @@ tfidf = tfidf_vectorizer.fit_transform(data['tidy_tweet'])   # TF-IDF feature ma
 data.drop(['source','tweet'],axis=1,inplace=True)
 
 #done with all pre model stages
-#Building random forest model using Bag-of-Words features
+#Building random forest model using TF-IDF features
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
